@@ -1,0 +1,21 @@
+{
+  "engine": "adas-linter",
+  "suite_version": "0.1.0",
+  "inputs": {
+    "type": "unspecified"
+  },
+  "outputs": {
+    "selftest": "passed"
+  },
+  "execution_status": "SUCCESS",
+  "verdict": "PASS",
+  "confidence": 1.0,
+  "degraded": false,
+  "caveats": [],
+  "findings": [],
+  "artifacts": [],
+  "started_at": "2026-09-28T06:58:21Z",
+  "finished_at": "2026-09-28T06:58:21Z",
+  "trace_id": "ea2ec613-61bd-45be-bb5e-13dc9a1ad7ad",
+  "schema": "audit-receipt-v1"
+}

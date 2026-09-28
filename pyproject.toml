@@ -1,0 +1,13 @@
+[project]
+name = "audit-suite"
+version = "0.1.0"
+description = "Zhengming audit suite: 13 tools turning audit replies into reusable technical assets. Zero dependencies."
+requires-python = ">=3.11"
+license = {text = "MIT"}
+
+[project.optional-dependencies]
+# T03 自用验证靶：本包自己的 extras 一致性也要过 pkg-linter
+dev = ["pytest"]
+
+[tool.audit-suite]
+# 本包是 pkg_linter 的第一个自测对象：all 组必须含全部 extras

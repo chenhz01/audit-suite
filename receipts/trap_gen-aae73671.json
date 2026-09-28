@@ -1,0 +1,28 @@
+{
+  "engine": "trap-gen",
+  "suite_version": "0.1.0",
+  "inputs": {
+    "traps": 5,
+    "judges": [
+      "naive",
+      "exitgate"
+    ]
+  },
+  "outputs": {
+    "expectations_checked": 10,
+    "matched": 10
+  },
+  "execution_status": "SUCCESS",
+  "verdict": "PASS",
+  "confidence": 1.0,
+  "degraded": false,
+  "caveats": [
+    "trap set is a starter kit; every future audit finding should become a new trap"
+  ],
+  "findings": [],
+  "artifacts": [],
+  "started_at": "2026-09-28T06:57:33Z",
+  "finished_at": "2026-09-28T06:57:33Z",
+  "trace_id": "aae73671-3b5e-487a-a554-c963d4543ec1",
+  "schema": "audit-receipt-v1"
+}

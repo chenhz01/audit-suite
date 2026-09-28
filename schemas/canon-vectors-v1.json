@@ -1,0 +1,92 @@
+{
+  "spec": "audit-suite-canon-v1",
+  "vectors": [
+    {
+      "name": "float-0.1",
+      "input": {
+        "amount": 0.1
+      },
+      "canonical_utf8": "{\"amount\":0.1}",
+      "sha256": "49ad50cd597e508a22be26466f1664fab1628b493f4496f7cc82250d33c1540b"
+    },
+    {
+      "name": "float-neg-zero",
+      "input": {
+        "x": -0.0
+      },
+      "canonical_utf8": "{\"x\":-0.0}",
+      "sha256": "529436936b90ebdff10ece80ead76834aeae76aa1e44d6c334ac3ca3832a8fba"
+    },
+    {
+      "name": "float-1e20",
+      "input": {
+        "big": 1e+20
+      },
+      "canonical_utf8": "{\"big\":1e+20}",
+      "sha256": "b999a63ccacbb0c7a6f6ce00afc77128f0851428e709ce23fa4c54f9f083d687"
+    },
+    {
+      "name": "float-tiny",
+      "input": {
+        "tiny": 1e-07
+      },
+      "canonical_utf8": "{\"tiny\":1e-07}",
+      "sha256": "52ab0346e08250b9378990c36fe876bb2640a16184e582360c645c82d8bb1e1b"
+    },
+    {
+      "name": "float-precision",
+      "input": {
+        "p": 0.30000000000000004
+      },
+      "canonical_utf8": "{\"p\":0.30000000000000004}",
+      "sha256": "217f6495b1eb612a9439bc46ca24db8a84a1e8d1c7c7ba71e56156ed503ba7c4"
+    },
+    {
+      "name": "int-exact",
+      "input": {
+        "n": 9007199254740992,
+        "m": -42
+      },
+      "canonical_utf8": "{\"m\":-42,\"n\":9007199254740992}",
+      "sha256": "6135a9a9a3591a9ba1f3d42d6cb4c96f7c18a50cab5ea57a9b427b9a7eb64c6a"
+    },
+    {
+      "name": "key-order",
+      "input": {
+        "zebra": 1,
+        "alpha": 2,
+        "Unicode键": 3
+      },
+      "canonical_utf8": "{\"Unicode键\":3,\"alpha\":2,\"zebra\":1}",
+      "sha256": "6876d0112e1f7c495c5acd78688977195151a120689c17905195192040abc405"
+    },
+    {
+      "name": "unicode-literal",
+      "input": {
+        "msg": "记忆→memory ✓"
+      },
+      "canonical_utf8": "{\"msg\":\"记忆→memory ✓\"}",
+      "sha256": "5fefc3612431cf5d1e56776995453ca2b2b076910221bd810bb9065359d06aa6"
+    },
+    {
+      "name": "nested",
+      "input": {
+        "b": [
+          {
+            "z": 1.5,
+            "a": null
+          }
+        ],
+        "a": true
+      },
+      "canonical_utf8": "{\"a\":true,\"b\":[{\"a\":null,\"z\":1.5}]}",
+      "sha256": "a971d5dbe6796fd993be914ed3618cac50ccff5ac398715eb24ce01d486922bb"
+    },
+    {
+      "name": "empty",
+      "input": {},
+      "canonical_utf8": "{}",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    }
+  ]
+}

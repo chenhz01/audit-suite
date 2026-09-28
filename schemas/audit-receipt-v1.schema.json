@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/chenhz01/audit-suite/schemas/audit-receipt-v1.schema.json",
+  "title": "Audit Receipt v1",
+  "description": "Machine-readable receipt emitted by every audit-suite tool. Extends the ARA output contract with the execution-status axis (execution-status-axis v1.0). A downstream consumer MUST treat execution_status and verdict as orthogonal: a SUCCESS run may carry a business FAIL; a run without an artifact carries no verdict at all.",
+  "type": "object",
+  "required": ["engine", "execution_status", "verdict", "confidence", "degraded", "trace_id", "schema"],
+  "properties": {
+    "schema": { "const": "audit-receipt-v1" },
+    "engine": { "type": "string", "minLength": 1 },
+    "suite_version": { "type": "string" },
+    "execution_status": {
+      "enum": ["SUCCESS", "EXPLICIT_FAILURE", "SILENT_TIMEOUT", "USAGE_ERROR", "POLICY_DENIED"],
+      "description": "How the run terminated. Orthogonal to verdict."
+    },
+    "verdict": {
+      "enum": ["PASS", "PASS-WITH-CAVEAT", "FAIL", null],
+      "description": "Business verdict. null only when execution_status != SUCCESS."
+    },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "degraded": {
+      "type": "boolean",
+      "description": "true = the audit itself was partial; consumers must not treat it as a clean verdict. Never upgrades or downgrades a FAIL."
+    },
+    "caveats": { "type": "array", "items": { "type": "string" } },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "severity", "message"],
+        "properties": {
+          "id": { "type": "string" },
+          "severity": { "enum": ["info", "minor", "major", "critical"] },
+          "message": { "type": "string" },
+          "location": { "type": "string", "description": "file:line or path, so a human can verify in 10 seconds" },
+          "reproducible": { "type": "boolean" }
+        }
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path"],
+        "properties": {
+          "path": { "type": "string" },
+          "sha256": { "type": "string" }
+        }
+      }
+    },
+    "inputs": { "type": "object" },
+    "outputs": { "type": "object" },
+    "started_at": { "type": "string" },
+    "finished_at": { "type": "string" },
+    "trace_id": { "type": "string" }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "engine": "trust-analyzer",
+  "suite_version": "0.1.0",
+  "inputs": {
+    "type": "unspecified"
+  },
+  "outputs": {
+    "selftest": "passed"
+  },
+  "execution_status": "SUCCESS",
+  "verdict": "PASS",
+  "confidence": 1.0,
+  "degraded": false,
+  "caveats": [],
+  "findings": [],
+  "artifacts": [],
+  "started_at": "2026-09-28T06:58:22Z",
+  "finished_at": "2026-09-28T06:58:22Z",
+  "trace_id": "3f61388b-dd08-499b-b54f-5c7f37db2d38",
+  "schema": "audit-receipt-v1"
+}

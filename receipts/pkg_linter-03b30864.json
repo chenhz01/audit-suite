@@ -1,0 +1,21 @@
+{
+  "engine": "pkg-linter",
+  "suite_version": "0.1.0",
+  "inputs": {
+    "type": "unspecified"
+  },
+  "outputs": {
+    "selftest": "passed"
+  },
+  "execution_status": "SUCCESS",
+  "verdict": "PASS",
+  "confidence": 1.0,
+  "degraded": false,
+  "caveats": [],
+  "findings": [],
+  "artifacts": [],
+  "started_at": "2026-09-28T06:58:22Z",
+  "finished_at": "2026-09-28T06:58:22Z",
+  "trace_id": "03b30864-9476-4fec-ae8b-5f3c41fb671e",
+  "schema": "audit-receipt-v1"
+}

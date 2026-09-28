@@ -1,0 +1,21 @@
+{
+  "engine": "canon-vectors",
+  "suite_version": "0.1.0",
+  "inputs": {
+    "file": "C:\\Users\\Administrator\\Desktop\\github-publish\\audit-suite\\schemas\\canon-vectors-v1.json"
+  },
+  "outputs": {
+    "vectors": 10
+  },
+  "execution_status": "SUCCESS",
+  "verdict": "PASS",
+  "confidence": 1.0,
+  "degraded": false,
+  "caveats": [],
+  "findings": [],
+  "artifacts": [],
+  "started_at": "2026-09-28T06:57:35Z",
+  "finished_at": "2026-09-28T06:57:35Z",
+  "trace_id": "c2ee0a98-2bbb-42be-8927-a234d2adca8b",
+  "schema": "audit-receipt-v1"
+}

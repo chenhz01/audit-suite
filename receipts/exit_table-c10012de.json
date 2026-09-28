@@ -1,0 +1,21 @@
+{
+  "engine": "execution-status-axis-conformance",
+  "suite_version": "0.1.0",
+  "inputs": {
+    "spec": "execution-status-axis-v1.0"
+  },
+  "outputs": {
+    "rows_checked": 9
+  },
+  "execution_status": "SUCCESS",
+  "verdict": "PASS",
+  "confidence": 1.0,
+  "degraded": false,
+  "caveats": [],
+  "findings": [],
+  "artifacts": [],
+  "started_at": "2026-09-28T06:57:36Z",
+  "finished_at": "2026-09-28T06:57:36Z",
+  "trace_id": "c10012de-f244-484a-aad4-684c1a5943e1",
+  "schema": "audit-receipt-v1"
+}

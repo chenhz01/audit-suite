@@ -1,0 +1,21 @@
+{
+  "engine": "receipt",
+  "suite_version": "0.1.0",
+  "inputs": {
+    "type": "unspecified"
+  },
+  "outputs": {
+    "selftest": "passed"
+  },
+  "execution_status": "SUCCESS",
+  "verdict": "PASS",
+  "confidence": 1.0,
+  "degraded": false,
+  "caveats": [],
+  "findings": [],
+  "artifacts": [],
+  "started_at": "2026-09-28T06:58:20Z",
+  "finished_at": "2026-09-28T06:58:20Z",
+  "trace_id": "d42a3f21-109b-41f6-9756-152cfbf2db6f",
+  "schema": "audit-receipt-v1"
+}

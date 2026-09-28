@@ -1,0 +1,21 @@
+{
+  "engine": "coverage-honesty",
+  "suite_version": "0.1.0",
+  "inputs": {
+    "type": "unspecified"
+  },
+  "outputs": {
+    "selftest": "passed"
+  },
+  "execution_status": "SUCCESS",
+  "verdict": "PASS",
+  "confidence": 1.0,
+  "degraded": false,
+  "caveats": [],
+  "findings": [],
+  "artifacts": [],
+  "started_at": "2026-09-28T06:58:20Z",
+  "finished_at": "2026-09-28T06:58:20Z",
+  "trace_id": "2f1d07f0-600a-4bb3-aaa7-9c501b63f900",
+  "schema": "audit-receipt-v1"
+}
