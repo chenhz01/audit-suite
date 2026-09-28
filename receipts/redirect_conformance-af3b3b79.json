@@ -1,0 +1,29 @@
+{
+  "engine": "redirect-conformance",
+  "suite_version": "0.1.0",
+  "inputs": {
+    "type": "unspecified"
+  },
+  "outputs": {
+    "protocol": "redirect-conformance-v1",
+    "vectors": 3,
+    "selftest": {
+      "naive": "FAIL",
+      "compliant": "PASS",
+      "naive_drained_bytes": 65536
+    }
+  },
+  "execution_status": "SUCCESS",
+  "verdict": "PASS",
+  "confidence": 1.0,
+  "degraded": false,
+  "caveats": [
+    "discriminator selftest: naive must FAIL, compliant must PASS"
+  ],
+  "findings": [],
+  "artifacts": [],
+  "started_at": "2026-09-28T10:19:23Z",
+  "finished_at": "2026-09-28T10:19:23Z",
+  "trace_id": "af3b3b79-b490-445e-8d37-0daec04990ef",
+  "schema": "audit-receipt-v1"
+}

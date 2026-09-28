@@ -41,6 +41,7 @@ TOOLS = {
     "egress_classify": "egress_classify",
     "opp_scorer": "opp_scorer",
     "exit_table": "exit_table",
+    "redirect_conformance": "redirect_conformance",
 }
 
 # per-tool default args so `suite run <tool>` works bare (self-use mode)
@@ -53,6 +54,7 @@ DEFAULT_ARGS = {
     "adas_linter": ["selftest"],
     "trust_analyzer": ["selftest"],
     "receipt": ["selftest"],
+    "redirect_conformance": ["selftest"],
 }
 
 
