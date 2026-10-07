@@ -1,11 +1,11 @@
 # audit-suite
 
-**13 tools that turn audit replies into reusable technical assets.**
+**14 tools that turn audit replies into reusable technical assets.**
 Every tool: zero dependencies, machine-readable receipt (`audit-receipt-v1`),
 deterministic exit codes (`execution-status-axis v1.0`), self-test built in.
 
-> Status: **local-only v0.1.0**. Self-verified via the unified runtime.
-> External release (PyPI / GitHub public / RFC) awaits explicit approval.
+> Status: **v0.1.0 · public** (this repo). Self-verified via the unified runtime.
+> PyPI / RFC distribution: not started.
 
 ## The idea
 
@@ -33,6 +33,7 @@ re-deriving the checklist by hand.
 | T11 | `egress_classify` | Grades log endpoints: upload-risk / telemetry / read-download, direction-aware | ZCode egress forensics |
 | T12 | `opp_scorer` | Scores open issues by *your capability*, not their importance | triage-picker × caveman 130-item triage |
 | T13 | `suite` | Unified runtime: run any tool, collect receipts, aggregate report | the glue layer |
+| T14 | `redirect_conformance` | Redirect-safety conformance vectors: scheme-allowlist, body-discard, outcome-honesty (local trap server + discriminator selftest) | adversarial-research-audit PR#4: two real holes found by an external researcher in our verify.py |
 
 ## Self-use (the acceptance bar)
 
@@ -69,7 +70,7 @@ Real self-use runs (2026-09-28):
 
 ```
 audit-suite/
-├── audit_suite/          # 13 tools (one module each) + suite.py runtime
+├── audit_suite/          # 14 tools (one module each) + suite.py runtime
 ├── schemas/              # audit-receipt-v1.schema.json, canon-vectors-v1.json
 ├── standards/            # execution-status-axis-v1.0.md
 ├── receipts/             # stored receipts from suite runs (machine-readable history)

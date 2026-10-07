@@ -1,7 +1,7 @@
 [project]
 name = "audit-suite"
 version = "0.1.0"
-description = "Zhengming audit suite: 13 tools turning audit replies into reusable technical assets. Zero dependencies."
+description = "Audit suite: 14 tools turning audit replies into reusable technical assets. Zero dependencies."
 requires-python = ">=3.11"
 license = {text = "MIT"}
 
